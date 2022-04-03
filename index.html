@@ -1,14 +1,18 @@
+<!DOCTYPE html>
 <html>
     <head>
-    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>  
+        <title>Simple Interest Calculator</title>
     </head>
     <body>
+        
         <div class="maindiv">
-            <title>Simple Interest Calculator</title>
-
+            
+            <h1>Simple Interest Calculator</h1>
+            
             Amount <input type="number"  id="principal">  <br/>
-            Rate <input type="number"  id="rate">  <br/>
+            <!-- Rate <input type="number"  id="rate">  <br/> -->
             No. of Years <select id="years">
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -23,21 +27,21 @@
             </select>
             
             <br/>
-            Interest : <input type="range"  id=".25" min="1" max="20" value="10.25"> 
-            <span id="rate_val">
+            Interest : <input type="range"  id="rate" min="1" max="20" value="10.25" step=".25" onchange="updateRate()"> 
+            <span id="rate_val" >
                 10.25%
             </span>
            <br>
 
             <button onclick="compute()">Compute Interest</button>
 
-            <span id="result"></span>
+            <span id="result">
+                
+            </span>
+            
             <footer>
-
                 &#169; This Calculator belongs to Ian Santos
-
             </footer>
-
         </div>
         
         
