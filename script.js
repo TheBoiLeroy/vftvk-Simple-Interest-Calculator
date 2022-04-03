@@ -29,6 +29,18 @@ function updateRate(event)
         var rateval = document.getElementById("rate").value
         document.getElementById("rate_val").innerText=rateval + '%';
 } 
+
+function hide()
+{
+    if(document.getElementById("result").innerHTML!="")
+    {
+        document.getElementById("result").innerHTML=""
+    }
+    else{
+        compute();
+    }
+
+}
    
     
 
